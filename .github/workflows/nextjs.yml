@@ -67,10 +67,10 @@ jobs:
           path: |
             racheljin/.next/cache
           # Generate a new cache whenever packages or source files change.
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('racheljin/package-lock.json', 'racheljin/yarn.lock') }}-${{ hashFiles('racheljin/**/*.ts', 'racheljin/**/*.tsx') }}
           # If source files changed but packages didn't, rebuild from a prior cache.
           restore-keys: |
-            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
+            ${{ runner.os }}-nextjs-${{ hashFiles('racheljin/package-lock.json', 'racheljin/yarn.lock') }}-
       - name: Install dependencies
         run: |
           cd racheljin
