@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/racheljin",
   output: "export",
-  reactStrictMode: true,
+  basePath: process.env.NODE_ENV === "production" ? "/racheljin" : "",
+  images: {
+    unoptimized: true,
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
