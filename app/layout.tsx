@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     default: "Rachel Jin",
     template: "%s | Rachel Jin",
   },
-  description: "Hi, I'm Rachel <:",
+  description: "hi, i'm rachel <:",
   openGraph: {
     title: "Rachel Jin",
-    description: "Hi, I'm Rachel <:",
+    description: "hi, i'm rachel <:",
     siteName: "Rachel Jin",
     images: "/opengraph-image.png",
     type: "website",
@@ -37,10 +37,10 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/org5cfx.css" />
         <link rel="stylesheet" href="https://use.typekit.net/cdd6oyg.css" />
         <meta name="theme-color" content="#FB98E5" />
-        <meta content="Rachel Jin" property="og:title"></meta>
-        <meta content="Hi, I'm Rachel <:" property="og:description"></meta>
+        <meta content="rachel jin" property="og:title"></meta>
+        <meta content="hi, I'm rachel <:" property="og:description"></meta>
         <meta
-          content="Rachel Jin's Personal Site"
+          content="rachel jin's personal site"
           property="og:site_name"
         ></meta>
         <meta content="/opengraph-image.png" property="og:image"></meta>
