@@ -77,14 +77,12 @@ jobs:
             ${{ runner.os }}-nextjs-${{ hashFiles('racheljin/package-lock.json', 'racheljin/yarn.lock') }}-
 
       - name: Install dependencies
-        run: |
-          cd racheljin
-          ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        working-directory: ./racheljin
 
       - name: Build with Next.js
-        run: |
-          cd racheljin
-          ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        working-directory: ./racheljin
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
