@@ -5,7 +5,7 @@ import "./globals.css";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  // metadataBase: new URL("https://tftourneys.com/"),
+  metadataBase: new URL("https://rachjn.github.io/"),
   title: {
     default: "Rachel Jin",
     template: "%s | Rachel Jin",
