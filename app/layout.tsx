@@ -39,6 +39,13 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://use.typekit.net/org5cfx.css" />
         <link rel="stylesheet" href="https://use.typekit.net/cdd6oyg.css" />
         <meta name="theme-color" content="#FB98E5" />
+        <meta content="Rachel Jin" property="og:title"></meta>
+        <meta
+          content="Hi, I'm Rachel! I'm a recent computer science enthusiast with specific interest in frontend development and UI/UX design."
+          property="og:description"
+        ></meta>
+        <meta content="Rachel Jin" property="og:site_name"></meta>
+        <meta content="/opengraph.png" property="og:image"></meta>
       </head>
       <body className="font-greycliff">{children}</body>
     </html>
