@@ -17,14 +17,14 @@ export const metadata: Metadata = {
     description:
       "Hi, I'm Rachel! I'm a recent computer science enthusiast with specific interest in frontend development and UI/UX design.",
     siteName: "Rachel Jin",
-    images: "/opengraph.png",
+    images: "/opengraph-image.png",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Rachel Jin",
     description: "Rachel Jin's personal site!",
-    images: "/opengraph.png", // Must be an absolute URL
+    images: "/opengraph-image.png", // Must be an absolute URL
   },
 };
 
