@@ -15,6 +15,7 @@ import Link from "next/link";
 import { BulletPoint, Panel } from "../components/bulletpoint";
 import { Navbar } from "../components/navbar";
 import { useState } from "react";
+import { LuStar } from "react-icons/lu";
 
 export default function Design() {
   const designTabs = [
@@ -99,7 +100,10 @@ export default function Design() {
                         alt="hoodie"
                         className="rounded-lg"
                       />
-                      <div className="text-sm mt-4">initial concept</div>
+                      <div className="text-sm mt-4 flex gap-2 items-center">
+                        <LuStar />
+                        initial concept
+                      </div>
                     </Panel>
                     <Panel props="mt-10 flex-shrink-0">
                       <Image
@@ -109,7 +113,10 @@ export default function Design() {
                         alt="hoodie"
                         className="rounded-lg"
                       />
-                      <div className="text-sm mt-4">rough sketch</div>
+                      <div className="text-sm mt-4 flex gap-2 items-center">
+                        <LuStar />
+                        rough sketch
+                      </div>
                     </Panel>
                   </div>
 
@@ -122,7 +129,10 @@ export default function Design() {
                         alt="hoodie"
                         className="rounded-lg"
                       />
-                      <div className="text-sm mt-4">refined sketch</div>
+                      <div className="text-sm mt-4 flex gap-2 items-center">
+                        <LuStar />
+                        refined sketch
+                      </div>
                     </Panel>
 
                     <Panel props="flex-shrink-0">
@@ -133,7 +143,10 @@ export default function Design() {
                         alt="hoodie"
                         className="rounded-lg"
                       />
-                      <div className="text-sm mt-4">final design</div>
+                      <div className="text-sm mt-4 flex gap-2 items-center">
+                        <LuStar />
+                        final design
+                      </div>
                     </Panel>
 
                     <Panel props="flex-shrink-0">
@@ -144,7 +157,10 @@ export default function Design() {
                         alt="hoodie"
                         className="rounded-lg"
                       />
-                      <div className="text-sm mt-4">finished product!</div>
+                      <div className="text-sm mt-4 flex gap-2 items-center">
+                        <LuStar />
+                        finished product!
+                      </div>
                     </Panel>
                   </div>
                 </div>

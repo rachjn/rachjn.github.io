@@ -43,7 +43,6 @@ export default function RootLayout({
           content="rachel jin's personal site"
           property="og:site_name"
         ></meta>
-        <meta content="/opengraph-image.png" property="og:image"></meta>
       </head>
       <body className="font-greycliff">{children}</body>
     </html>
