@@ -1,32 +1,16 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import FloatingEffect from "./components/float";
 
 export default function Home() {
-  // const floatAnimation = {
-  //   initial: { y: 0 },
-  //   animate: {
-  //     y: [0, -10, 10, -5, 5, -2, 2, 0], // Random vertical motion
-  //     transition: {
-  //       y: {
-  //         repeat: Infinity, // Infinite loop
-  //         repeatType: "loop", // Repeat in a loop
-  //         duration: 4, // Duration of one complete loop
-  //         ease: "easeInOut", // Smooth easing
-  //       },
-  //     },
-  //   },
-  // };
-
   return (
     <>
       <div className="overflow-x-clip relative w-full">
         <div className="mix-blend-overlay absolute -left-[18vh] -top-20">
           <div className="absolute lg:top-[20vh] left-[10vw] w-[20rem] h-[20rem] bg-extra-blue rounded-full  filter blur-2xl animate-blob opacity-80"></div>
           <div className="absolute lg:top-[20vh] left-[40vw] w-[20rem] h-[20rem] bg-pris-light-pink rounded-full  filter blur-3xl md:blur-2xl animate-blob animation-delay-2000 opacity-90"></div>
-          <div className="absolute lg:top-[20rem] left-[24vw] w-[20rem] h-[20rem] bg-pris-yellow rounded-full  filter blur-2xl animate-blob animation-delay-4000 opacity-80 "></div>
+          <div className="absolute lg:top-[20rem] left-[24vw] w-[20rem] h-[20rem] bg-pris-yellow rounded-full  filter blur-2xl animate-blob animation-delay-4000 opacity-70 "></div>
         </div>
 
         <div className="absolute -right-[4rem] top-[20vh] lg:right-0 lg:top-0">

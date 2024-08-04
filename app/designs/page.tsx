@@ -89,7 +89,7 @@ export default function Design() {
             <>
               {/* <div className="flex gap-6 flex-wrap"> */}
               {/* <div> */}
-              <div className="flex justify-center flex-wrap gap-6 space-y-0">
+              <div className="flex justify-center flex-wrap gap-6 gap-y-0">
                 <div id="sec1">
                   <SlideRight delay={0}>
                     <BulletPoint props="lowercase">
@@ -235,130 +235,6 @@ export default function Design() {
                   </Panel>
                 </SlideLeft>
               </div>
-
-              {/* <BulletPoint props="lowercase">
-                  as marketing and engagement chair for acm studio, i&apos;ve
-                  designed graphics and merchandise for the club.
-                </BulletPoint>
-                <BulletPoint props="lowercase">
-                  this year, i iterated through early sketches and compositions
-                  for our hoodies. the final design was composed by derek jiang!
-                </BulletPoint> */}
-              {/* </div> */}
-
-              {/* <div id="images" className="max-w-[42rem] flex flex-wrap gap-6">
-                <Panel props="flex-shrink-0">
-                  <Image
-                    src="/hoodie1.png"
-                    height={400}
-                    width={400}
-                    alt="hoodie"
-                    className="rounded-lg"
-                  />
-                  <div className="text-sm mt-4 flex gap-2 items-center">
-                    <LuStar />
-                    initial concept
-                  </div>
-                </Panel>
-                <Panel props="flex-shrink-0">
-                  <Image
-                    src="/hoodie2.png"
-                    height={400}
-                    width={400}
-                    alt="hoodie"
-                    className="rounded-lg"
-                  />
-                  <div className="text-sm mt-4 flex gap-2 items-center">
-                    <LuStar />
-                    rough sketch
-                  </div>
-                </Panel>
-              </div>
-
-              <div className="flex flex-wrap -mt-9 gap-6">
-                <Panel props="flex-shrink-0">
-                  <Image
-                    src="/hoodie3.png"
-                    height={400}
-                    width={400}
-                    alt="hoodie"
-                    className="rounded-lg"
-                  />
-                  <div className="text-sm mt-4 flex gap-2 items-center">
-                    <LuStar />
-                    refined sketch
-                  </div>
-                </Panel>
-
-                <Panel props="flex-shrink-0">
-                  <Image
-                    src="/hoodie4.png"
-                    height={400}
-                    width={400}
-                    alt="hoodie"
-                    className="rounded-lg"
-                  />
-                  <div className="text-sm mt-4 flex gap-2 items-center">
-                    <LuStar />
-                    final design
-                  </div>
-                </Panel>
-
-                <Panel props="flex-shrink-0">
-                  <Image
-                    src="/hoodie5.png"
-                    height={400}
-                    width={400}
-                    alt="hoodie"
-                    className="rounded-lg"
-                  />
-                  <div className="text-sm mt-4 flex gap-2 items-center">
-                    <LuStar />
-                    finished product!
-                  </div>
-                </Panel>
-              </div>
-
-              <div className="-mt-14">
-                <BulletPoint>
-                  here are some graphics i created for our weekly workshops! we
-                  display these on our instagram and in club announcements.
-                </BulletPoint>
-
-                <BulletPoint>
-                  the axolotl, named sooper, is our club mascot. it makes an
-                  appearance in almost all of our graphics!
-                </BulletPoint>
-              </div>
-
-              <Panel props="-mt-5 flex-shrink-0">
-                <Image
-                  src="/workshop1.png"
-                  height={400}
-                  width={400}
-                  alt="hoodie"
-                  className="rounded-lg"
-                />
-                <div className="text-sm mt-4 flex gap-2 items-center">
-                  <LuStar />
-                  worldbuilding workshop
-                </div>
-              </Panel>
-
-              <Panel props="-mt-10 flex-shrink-0">
-                <Image
-                  src="/workshop2.png"
-                  height={400}
-                  width={400}
-                  alt="hoodie"
-                  className="rounded-lg"
-                />
-                <div className="text-sm mt-4 flex gap-2 items-center">
-                  <LuStar />
-                  exporting a project workshop
-                </div>
-              </Panel> */}
-              {/* </div> */}
             </>
           )}
         </div>
