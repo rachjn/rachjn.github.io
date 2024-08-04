@@ -1,7 +1,25 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import FloatingEffect from "./components/float";
 
 export default function Home() {
+  // const floatAnimation = {
+  //   initial: { y: 0 },
+  //   animate: {
+  //     y: [0, -10, 10, -5, 5, -2, 2, 0], // Random vertical motion
+  //     transition: {
+  //       y: {
+  //         repeat: Infinity, // Infinite loop
+  //         repeatType: "loop", // Repeat in a loop
+  //         duration: 4, // Duration of one complete loop
+  //         ease: "easeInOut", // Smooth easing
+  //       },
+  //     },
+  //   },
+  // };
+
   return (
     <>
       <div className="relative w-full max-w-lg">
@@ -19,39 +37,82 @@ export default function Home() {
         <div className="font-bold text-8xl">rachel jin</div>
         <div className="h-[35rem] w-[40rem] rounded-lg">
           <div className="flex mt-8">
-            <Link
-              href="/about"
-              className="transition ease-in-out delay-50 hover:scale-[101%] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-xl hover:shadow-white/40 relative h-[14rem] w-[22rem] bg-lightest rounded-lg m-3"
-            >
-              <div className="absolute bottom-4 left-5 font-bold text-3xl">
-                about
-              </div>
+            <Link href="/about" className="relative">
+              <FloatingEffect
+                delay={0}
+                height="h-[14rem]"
+                width="w-[22rem]"
+                shadowColor="hover:shadow-pris-yellow/40"
+              >
+                <div className="absolute font-bold text-3xl bottom-4 left-5">
+                  about
+                </div>
+              </FloatingEffect>
             </Link>
-            <Link
+            {/* <Link
               href="/designs"
-              className="transition ease-in-out delay-50 hover:scale-[101%] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-xl hover:shadow-white/40 relative h-[14rem] w-[14rem] bg-lightest rounded-lg mt-3"
+              className="animate-float2 hover:animate-none transition ease-in duration-200 hover:scale-[101%] hover:shadow-xl hover:shadow-second-blue/40 relative h-[14rem] w-[14rem] bg-lightest rounded-lg mt-3"
             >
               <div className="absolute top-4 left-5 font-bold text-3xl">
                 designs
               </div>
+            </Link> */}
+
+            <Link href="/art" className="relative">
+              <FloatingEffect
+                delay={0.8}
+                height="h-[14rem]"
+                width="w-[14rem]"
+                shadowColor="hover:shadow-second-blue/40"
+              >
+                <div className="absolute font-bold text-3xl top-4 right-5">
+                  designs
+                </div>
+              </FloatingEffect>
             </Link>
           </div>
           <div className="flex">
-            <Link
+            {/* <Link
               href="/art"
-              className="transition ease-in-out delay-50 hover:scale-[101%] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-xl hover:shadow-white/40 relative h-[14rem] w-[14rem] bg-lightest rounded-lg mx-3"
+              className="animate-float4 hover:animate-none transition ease-in-out duration-200 hover:scale-[101%] hover:shadow-xl hover:shadow-third-pink/40 relative h-[14rem] w-[14rem] bg-lightest rounded-lg mx-3"
             >
               <div className="absolute bottom-4 right-5 font-bold text-3xl">
                 digital art
               </div>
+            </Link> */}
+
+            <Link href="/art" className="relative">
+              <FloatingEffect
+                delay={1.2}
+                height="h-[14rem]"
+                width="w-[14rem]"
+                shadowColor="hover:shadow-third-pink/40"
+              >
+                <div className="absolute font-bold text-3xl top-4 right-5">
+                  digital art
+                </div>
+              </FloatingEffect>
             </Link>
-            <Link
+            {/* <Link
               href="/projects"
-              className="transition ease-in-out delay-50 hover:scale-[101%] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-xl hover:shadow-white/40 relative h-[14rem] w-[22rem] bg-lightest rounded-lg"
+              className="animate-float3 hover:animate-none transition ease-in-out duration-200 hover:scale-[101%] hover:shadow-xl hover:shadow-pris-light-pink/40 relative h-[14rem] w-[22rem] bg-lightest rounded-lg"
             >
               <div className="absolute top-4 right-5 font-bold text-3xl">
                 projects
               </div>
+            </Link> */}
+
+            <Link href="/projects" className="relative">
+              <FloatingEffect
+                delay={0.6}
+                height="h-[14rem]"
+                width="w-[22rem]"
+                shadowColor="hover:shadow-pris-light-pink/40"
+              >
+                <div className="absolute font-bold text-3xl top-4 right-5">
+                  projects
+                </div>
+              </FloatingEffect>
             </Link>
           </div>
         </div>
