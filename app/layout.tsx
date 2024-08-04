@@ -44,7 +44,7 @@ export default function RootLayout({
           property="og:site_name"
         ></meta>
       </head>
-      <body className="font-greycliff">{children}</body>
+      <body className="font-greycliff overflow-x-clip">{children}</body>
     </html>
   );
 }

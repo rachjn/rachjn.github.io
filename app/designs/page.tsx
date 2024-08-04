@@ -16,6 +16,8 @@ import { BulletPoint, Panel } from "../components/bulletpoint";
 import { Navbar } from "../components/navbar";
 import { useState } from "react";
 import { LuStar } from "react-icons/lu";
+import { motion } from "framer-motion";
+import { SlideLeft, SlideRight } from "../components/sliding";
 
 export default function Design() {
   const designTabs = [
@@ -38,21 +40,29 @@ export default function Design() {
         <div className=" mix-blend-multiply fixed top-[20rem] md:top-[19rem] left-[6rem] md:left-[30rem] w-[25rem] h-[25rem] bg-third-blue rounded-full  filter blur-2xl animate-blob animation-delay-4000 opacity-70 "></div>
       </div>
 
-      <Link href="/art" className="absolute right-20 top-[20rem]">
-        <LuChevronRight className="h-10 w-10 hover:animate-arrow" />
+      {/* <Link href="/art" className="absolute right-[2vw] top-[20rem] z-20">
+        <LuChevronRight className="h-10 w-10 hover:animate-arrow animate-fade" />
       </Link>
 
-      <Link href="/about" className="absolute left-20 top-[20rem]">
-        <LuChevronLeft className="h-10 w-10 hover:animate-arrow" />
-      </Link>
+      <Link href="/about" className="fixed left-[2vw] top-[20rem] z-20">
+        <LuChevronLeft className="h-10 w-10 hover:animate-arrow animate-fade" />
+      </Link> */}
 
       <Link href="/" className="absolute left-10 top-10">
-        <LuHome className="h-8 w-7 hover:animate-pulse" />
+        <LuHome className="h-8 w-7 hover:animate-pulse animate-fade" />
       </Link>
 
-      <div className="mx-[12rem] my-20">
-        <div>
-          <div className="flex items-end gap-12">
+      <Link href="/about" className="absolute right-[30vw] top-10">
+        <LuChevronLeft className="h-10 w-10 hover:animate-arrow animate-fade" />
+      </Link>
+
+      <Link href="/art" className="absolute right-[10vw] top-10">
+        <LuChevronRight className="h-10 w-10 hover:animate-arrow animate-fade" />
+      </Link>
+
+      <div className="my-[7rem] w-full relative overflow-x-clip">
+        <div className="flex items-end gap-12">
+          <div className="mb-16 flex flex-wrap justify-center lg:justify-start items-end gap-12 mx-0 sm:mx-[14vw] opacity-0 animate-slideInTop">
             <div className="font-bold text-4xl">recent works</div>
             <Navbar
               onTabChange={handleTabChange}
@@ -60,112 +70,107 @@ export default function Design() {
               underlineColor="border-pris-pink"
             />
           </div>
+        </div>
 
-          <div className="flex gap-6">
-            {activeTab.label === "TFTourneys" && (
-              <>
-                <BulletPoint props="mt-10 lowercase">TFTourneys</BulletPoint>
-              </>
-            )}
+        <div className="-mt-6 mx-[12vw] flex gap-6 flex-wrap items-center justify-center">
+          {activeTab.label === "TFTourneys" && (
+            <>
+              <BulletPoint props=" lowercase">TFTourneys</BulletPoint>
+            </>
+          )}
 
-            {activeTab.label === "Collegiate Wushu" && (
-              <>
-                <BulletPoint props="mt-10 lowercase">
-                  Collegiate Wushu
-                </BulletPoint>
-              </>
-            )}
+          {activeTab.label === "Collegiate Wushu" && (
+            <>
+              <BulletPoint props="lowercase">Collegiate Wushu</BulletPoint>
+            </>
+          )}
 
-            {activeTab.label === "ACM Studio" && (
-              <>
-                <div className="flex gap-6 flex-wrap">
-                  <div>
-                    <BulletPoint props="mt-12 lowercase">
+          {activeTab.label === "ACM Studio" && (
+            <>
+              {/* <div className="flex gap-6 flex-wrap"> */}
+              {/* <div> */}
+              <div className="flex justify-center flex-wrap gap-6 space-y-0">
+                <div id="sec1">
+                  <SlideRight delay={0}>
+                    <BulletPoint props="lowercase">
                       as marketing and engagement chair for acm studio,
                       i&apos;ve designed graphics and merchandise for the club.
                     </BulletPoint>
+                  </SlideRight>
+                  <SlideRight delay={0.2}>
                     <BulletPoint props="lowercase">
                       this year, i iterated through early sketches and
                       compositions for our hoodies. the final design was
                       composed by derek jiang!
                     </BulletPoint>
-                  </div>
-
-                  <div id="images" className="max-w-[40rem] flex gap-6">
-                    <Panel props="mt-10 flex-shrink-0">
-                      <Image
-                        src="/hoodie1.png"
-                        height={400}
-                        width={400}
-                        alt="hoodie"
-                        className="rounded-lg"
-                      />
-                      <div className="text-sm mt-4 flex gap-2 items-center">
-                        <LuStar />
-                        initial concept
-                      </div>
-                    </Panel>
-                    <Panel props="mt-10 flex-shrink-0">
-                      <Image
-                        src="/hoodie2.png"
-                        height={400}
-                        width={400}
-                        alt="hoodie"
-                        className="rounded-lg"
-                      />
-                      <div className="text-sm mt-4 flex gap-2 items-center">
-                        <LuStar />
-                        rough sketch
-                      </div>
-                    </Panel>
-                  </div>
-
-                  <div className="flex -mt-9 gap-6">
-                    <Panel props="flex-shrink-0">
-                      <Image
-                        src="/hoodie3.png"
-                        height={400}
-                        width={400}
-                        alt="hoodie"
-                        className="rounded-lg"
-                      />
-                      <div className="text-sm mt-4 flex gap-2 items-center">
-                        <LuStar />
-                        refined sketch
-                      </div>
-                    </Panel>
-
-                    <Panel props="flex-shrink-0">
-                      <Image
-                        src="/hoodie4.png"
-                        height={400}
-                        width={400}
-                        alt="hoodie"
-                        className="rounded-lg"
-                      />
-                      <div className="text-sm mt-4 flex gap-2 items-center">
-                        <LuStar />
-                        final design
-                      </div>
-                    </Panel>
-
-                    <Panel props="flex-shrink-0">
-                      <Image
-                        src="/hoodie5.png"
-                        height={400}
-                        width={400}
-                        alt="hoodie"
-                        className="rounded-lg"
-                      />
-                      <div className="text-sm mt-4 flex gap-2 items-center">
-                        <LuStar />
-                        finished product!
-                      </div>
-                    </Panel>
-                  </div>
+                  </SlideRight>
                 </div>
 
-                {/* <div className="flex -mt-9 gap-6">
+                <SlideLeft delay={0}>
+                  <Panel props="flex-shrink-0">
+                    <Image
+                      src="/hoodie1.png"
+                      height={400}
+                      width={400}
+                      alt="hoodie"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      initial concept
+                    </div>
+                  </Panel>
+                </SlideLeft>
+
+                <SlideLeft delay={0.2}>
+                  <Panel props="flex-shrink-0">
+                    <Image
+                      src="/hoodie2.png"
+                      height={400}
+                      width={400}
+                      alt="hoodie"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      rough sketch
+                    </div>
+                  </Panel>
+                </SlideLeft>
+
+                <SlideRight delay={0}>
+                  <Panel props="flex-shrink-0">
+                    <Image
+                      src="/hoodie3.png"
+                      height={400}
+                      width={400}
+                      alt="hoodie"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      refined sketch
+                    </div>
+                  </Panel>
+                </SlideRight>
+
+                <SlideRight delay={0.2}>
+                  <Panel props="flex-shrink-0">
+                    <Image
+                      src="/hoodie4.png"
+                      height={400}
+                      width={400}
+                      alt="hoodie"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      final design
+                    </div>
+                  </Panel>
+                </SlideRight>
+
+                <SlideRight delay={0.4}>
                   <Panel props="flex-shrink-0">
                     <Image
                       src="/hoodie5.png"
@@ -174,12 +179,188 @@ export default function Design() {
                       alt="hoodie"
                       className="rounded-lg"
                     />
-                    <div className="text-sm mt-4">finished product!</div>
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      finished product!
+                    </div>
                   </Panel>
-                </div> */}
-              </>
-            )}
-          </div>
+                </SlideRight>
+
+                <div id="sec2">
+                  <SlideRight delay={0}>
+                    <BulletPoint>
+                      here are some graphics i created for our weekly workshops!
+                      we display these on our instagram and in club
+                      announcements.
+                    </BulletPoint>
+                  </SlideRight>
+
+                  <SlideRight delay={0.2}>
+                    <BulletPoint>
+                      the axolotl, named sooper, is our club mascot. it makes an
+                      appearance in almost all of our graphics!
+                    </BulletPoint>
+                  </SlideRight>
+                </div>
+
+                <SlideLeft delay={0}>
+                  <Panel props="flex-shrink-0">
+                    <Image
+                      src="/workshop1.png"
+                      height={400}
+                      width={400}
+                      alt="hoodie"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      worldbuilding workshop
+                    </div>
+                  </Panel>
+                </SlideLeft>
+
+                <SlideLeft delay={0.2}>
+                  <Panel props="flex-shrink-0">
+                    <Image
+                      src="/workshop2.png"
+                      height={400}
+                      width={400}
+                      alt="hoodie"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      exporting a project workshop
+                    </div>
+                  </Panel>
+                </SlideLeft>
+              </div>
+
+              {/* <BulletPoint props="lowercase">
+                  as marketing and engagement chair for acm studio, i&apos;ve
+                  designed graphics and merchandise for the club.
+                </BulletPoint>
+                <BulletPoint props="lowercase">
+                  this year, i iterated through early sketches and compositions
+                  for our hoodies. the final design was composed by derek jiang!
+                </BulletPoint> */}
+              {/* </div> */}
+
+              {/* <div id="images" className="max-w-[42rem] flex flex-wrap gap-6">
+                <Panel props="flex-shrink-0">
+                  <Image
+                    src="/hoodie1.png"
+                    height={400}
+                    width={400}
+                    alt="hoodie"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    initial concept
+                  </div>
+                </Panel>
+                <Panel props="flex-shrink-0">
+                  <Image
+                    src="/hoodie2.png"
+                    height={400}
+                    width={400}
+                    alt="hoodie"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    rough sketch
+                  </div>
+                </Panel>
+              </div>
+
+              <div className="flex flex-wrap -mt-9 gap-6">
+                <Panel props="flex-shrink-0">
+                  <Image
+                    src="/hoodie3.png"
+                    height={400}
+                    width={400}
+                    alt="hoodie"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    refined sketch
+                  </div>
+                </Panel>
+
+                <Panel props="flex-shrink-0">
+                  <Image
+                    src="/hoodie4.png"
+                    height={400}
+                    width={400}
+                    alt="hoodie"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    final design
+                  </div>
+                </Panel>
+
+                <Panel props="flex-shrink-0">
+                  <Image
+                    src="/hoodie5.png"
+                    height={400}
+                    width={400}
+                    alt="hoodie"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    finished product!
+                  </div>
+                </Panel>
+              </div>
+
+              <div className="-mt-14">
+                <BulletPoint>
+                  here are some graphics i created for our weekly workshops! we
+                  display these on our instagram and in club announcements.
+                </BulletPoint>
+
+                <BulletPoint>
+                  the axolotl, named sooper, is our club mascot. it makes an
+                  appearance in almost all of our graphics!
+                </BulletPoint>
+              </div>
+
+              <Panel props="-mt-5 flex-shrink-0">
+                <Image
+                  src="/workshop1.png"
+                  height={400}
+                  width={400}
+                  alt="hoodie"
+                  className="rounded-lg"
+                />
+                <div className="text-sm mt-4 flex gap-2 items-center">
+                  <LuStar />
+                  worldbuilding workshop
+                </div>
+              </Panel>
+
+              <Panel props="-mt-10 flex-shrink-0">
+                <Image
+                  src="/workshop2.png"
+                  height={400}
+                  width={400}
+                  alt="hoodie"
+                  className="rounded-lg"
+                />
+                <div className="text-sm mt-4 flex gap-2 items-center">
+                  <LuStar />
+                  exporting a project workshop
+                </div>
+              </Panel> */}
+              {/* </div> */}
+            </>
+          )}
         </div>
       </div>
     </>

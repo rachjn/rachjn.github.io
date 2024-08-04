@@ -33,7 +33,7 @@ const Navbar = ({ tabs, underlineColor, onTabChange }: NavbarProps) => {
 
   return (
     <>
-      <div className="flex gap-12">
+      <div className="flex gap-12 flex-wrap justify-center">
         {tabs.map((tab) => {
           const IconComponent = tab.icon ? iconMapping[tab.icon] : null;
           const isActive = activeTab.label === tab.label;

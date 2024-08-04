@@ -67,7 +67,7 @@ module.exports = {
           "100%": { transform: "translate(0px, 0px) scale(1)" },
         },
         slideInTop: {
-          "0%": { transform: "translate(0, -400%)", opacity: 0 },
+          "0%": { transform: "translate(0, -100%)", opacity: 0 },
           "100%": { transform: "translate(0, 0)", opacity: 1 },
         },
         float1: {

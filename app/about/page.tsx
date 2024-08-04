@@ -12,37 +12,18 @@ import {
 import Link from "next/link";
 import { BulletPoint, Panel } from "../components/bulletpoint";
 
-import { useEffect, useState } from "react";
-
 import { motion } from "framer-motion";
-
-// export function useIsVisible(ref: any) {
-//   const [isIntersecting, setIntersecting] = useState(false);
-
-//   useEffect(() => {
-//     const observer = new IntersectionObserver(([entry]) => {
-//       setIntersecting(entry.isIntersecting);
-//     });
-
-//     observer.observe(ref.current);
-//     return () => {
-//       observer.disconnect();
-//     };
-//   }, [ref]);
-
-//   return isIntersecting;
-// }
 
 export default function About() {
   return (
     <>
-      <div className="relative w-full max-w-lg -z-20 animate-fade">
+      <div className="overflow-x-clip relative w-full animate-fade">
         <div className="mix-blend-multiply fixed top-[10rem] md:top-[14rem] -left-[4rem] md:left-[10rem] w-[24rem] h-[24rem] bg-third-pink rounded-full  filter blur-2xl animate-blob opacity-80"></div>
         <div className="mix-blend-multiply fixed top-[6rem] md:top-[8rem] right-[19rem] w-[24rem] h-[24rem] md:w-[25rem] md:h-[25rem] bg-pris-light-pink rounded-full  filter blur-3xl md:blur-2xl animate-blob animation-delay-2000 opacity-70"></div>
         <div className="mix-blend-multiply fixed top-[20rem] md:top-[19rem] left-[6rem] md:left-[30rem] w-[25rem] h-[25rem] bg-pris-pink rounded-full  filter blur-2xl animate-blob animation-delay-4000 opacity-70 "></div>
       </div>
 
-      <Link href="/designs" className="absolute right-[5vw] top-[20rem] z-20">
+      <Link href="/designs" className="absolute right-[10vw] top-10">
         <LuChevronRight className="h-10 w-10 hover:animate-arrow animate-fade" />
       </Link>
 
@@ -50,11 +31,11 @@ export default function About() {
         <LuHome className="h-8 w-7 animate-fade hover:animate-pulse" />
       </Link>
 
-      <div className="my-20">
+      <div className="my-[7rem] w-full relative overflow-x-clip">
         <div>
           <div className="mb-16 flex flex-wrap justify-center lg:justify-start items-end gap-12 mx-[14vw] opacity-0 animate-slideInTop">
             <div className="font-bold text-4xl">hi, i&apos;m rachel!</div>
-            <div className="flex justify-center items-end gap-12">
+            <div className="flex flex-wrap justify-center items-end gap-12">
               <div className="flex items-center gap-2 text-lg">
                 <LuGraduationCap />
                 UCLA 2026
@@ -79,7 +60,8 @@ export default function About() {
               </Link>
             </div>
           </div>
-          <div className="mx-[12vw] flex gap-6 flex-wrap items-center justify-center">
+
+          <div className=" mx-0 sm:mx-[12vw] flex gap-6 flex-wrap items-center justify-center">
             <div id="col-1">
               <motion.div
                 initial={{ opacity: 0, x: "-100px" }} // Start position
@@ -116,6 +98,7 @@ export default function About() {
                 </BulletPoint>
               </motion.div>
             </div>
+
             <div id="col-2">
               <motion.div
                 initial={{ opacity: 0, x: "100px" }} // Start position
