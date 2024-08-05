@@ -110,18 +110,17 @@ export default function Design() {
               <div>
                 <SlideLeft delay={0}>
                   <BulletPoint>
-                    however, discussing with the team & gathering feedback, my
-                    perspective changed.
+                    however, discussing with the team & gathering feedback, we
+                    pinpointed a need for change.
                     <br></br>
-                    it was clear we needed more visual interest to attract
-                    users.
+                    it was clear we needed more visual interest & appeal.
                   </BulletPoint>
                 </SlideLeft>
 
                 <SlideLeft delay={0.2}>
                   <BulletPoint>
-                    with some constructive criticism, i redesigned the theming
-                    of the entire site.
+                    with some constructive criticism, i redesigned the overall
+                    theming for the site.
                   </BulletPoint>
                 </SlideLeft>
 
