@@ -113,7 +113,8 @@ export default function Design() {
                     however, discussing with the team & gathering feedback, we
                     pinpointed a need for change.
                     <br></br>
-                    it was clear we needed more visual interest & appeal.
+                    it was clear we needed more visual interest, and pure b&w
+                    strains the eye.
                   </BulletPoint>
                 </SlideLeft>
 
