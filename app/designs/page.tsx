@@ -90,7 +90,7 @@ export default function Design() {
 
                 <SlideRight delay={0.1}>
                   <BulletPoint>
-                    i designed & implemented the site's visual interface.
+                    i designed & implemented the site&apos;s visual interface.
                   </BulletPoint>
                 </SlideRight>
                 <SlideRight delay={0.2}>
@@ -127,7 +127,7 @@ export default function Design() {
 
                 <SlideLeft delay={0.4}>
                   <BulletPoint>
-                    i pulled inspiration from tft's prismatic themes - from
+                    i pulled inspiration from tft&apos;s prismatic themes - from
                     there, everything fell into place!
                   </BulletPoint>
                 </SlideLeft>
