@@ -140,7 +140,7 @@ module.exports = {
         slideInTop: "slideInTop .5s ease-in-out forwards",
         gradient: "gradient 6s linear infinite",
         blob: "blob 7s infinite",
-        fade: "fadeIn .4s ease-in-out",
+        fade: "fadeIn .4s ease-in-out forwards",
       },
     },
   },

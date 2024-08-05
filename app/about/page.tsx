@@ -24,11 +24,11 @@ export default function About() {
       </div>
 
       <Link href="/designs" className="absolute right-[10vw] top-10">
-        <LuChevronRight className="h-10 w-10 hover:animate-arrow animate-fade" />
+        <LuChevronRight className="h-10 w-10 hover:animate-arrow" />
       </Link>
 
       <Link href="/" className="absolute left-10 top-10">
-        <LuHome className="h-8 w-7 animate-fade hover:animate-pulse" />
+        <LuHome className="h-8 w-7 hover:animate-pulse" />
       </Link>
 
       <div className="my-[7rem] w-full relative overflow-x-clip">

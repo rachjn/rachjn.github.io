@@ -28,4 +28,14 @@ const Panel = ({ children, props }: BulletPointProps) => {
   );
 };
 
-export { BulletPoint, Panel };
+const GrowablePanel = ({ children, props }: BulletPointProps) => {
+  return (
+    <div
+      className={`${props} px-8 py-6 my-4 bg-backwhite z-20 rounded-xl bg-opacity-40 backdrop-blur`}
+    >
+      <div>{children}</div>
+    </div>
+  );
+};
+
+export { BulletPoint, Panel, GrowablePanel };

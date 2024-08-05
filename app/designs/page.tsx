@@ -12,7 +12,7 @@ import {
   LuHome,
 } from "react-icons/lu";
 import Link from "next/link";
-import { BulletPoint, Panel } from "../components/bulletpoint";
+import { BulletPoint, GrowablePanel, Panel } from "../components/bulletpoint";
 import { Navbar } from "../components/navbar";
 import { useState } from "react";
 import { LuStar } from "react-icons/lu";
@@ -49,15 +49,15 @@ export default function Design() {
       </Link> */}
 
       <Link href="/" className="absolute left-10 top-10">
-        <LuHome className="h-8 w-7 hover:animate-pulse animate-fade" />
+        <LuHome className="h-8 w-7 hover:animate-pulse" />
       </Link>
 
       <Link href="/about" className="absolute right-[30vw] top-10">
-        <LuChevronLeft className="h-10 w-10 hover:animate-arrow animate-fade" />
+        <LuChevronLeft className="h-10 w-10 hover:animate-arrow" />
       </Link>
 
       <Link href="/art" className="absolute right-[10vw] top-10">
-        <LuChevronRight className="h-10 w-10 hover:animate-arrow animate-fade" />
+        <LuChevronRight className="h-10 w-10 hover:animate-arrow" />
       </Link>
 
       <div className="my-[7rem] w-full relative overflow-x-clip">
@@ -72,10 +72,232 @@ export default function Design() {
           </div>
         </div>
 
-        <div className="-mt-6 mx-[12vw] flex gap-6 flex-wrap items-center justify-center">
+        <div className="-mt-6 mx-[12vw] flex gap-6 flex-wrap items-start justify-center gap-y-0">
           {activeTab.label === "TFTourneys" && (
             <>
-              <BulletPoint props=" lowercase">TFTourneys</BulletPoint>
+              {/* <BulletPoint props="lowercase">TFTourneys</BulletPoint> */}
+
+              <div>
+                <SlideRight delay={0}>
+                  <BulletPoint>
+                    more info about this project can be found under
+                    <Link href="/projects" className="font-bold">
+                      {" "}
+                      projects.
+                    </Link>
+                  </BulletPoint>
+                </SlideRight>
+
+                <SlideRight delay={0.1}>
+                  <BulletPoint>
+                    i designed & implemented the site's visual interface.
+                  </BulletPoint>
+                </SlideRight>
+                <SlideRight delay={0.2}>
+                  <BulletPoint>
+                    initially, i envisioned a sleek b&w theme with minimal
+                    colors.
+                  </BulletPoint>
+                </SlideRight>
+                <SlideRight delay={0.3}>
+                  <BulletPoint>
+                    working with colors scared me - i always felt my past work
+                    lead to tacky designs.
+                  </BulletPoint>
+                </SlideRight>
+              </div>
+
+              <div>
+                <SlideLeft delay={0}>
+                  <BulletPoint>
+                    however, discussing with the team & gathering feedback, my
+                    perspective changed.
+                    <br></br>
+                    it was clear we needed more visual interest to attract
+                    users.
+                  </BulletPoint>
+                </SlideLeft>
+
+                <SlideLeft delay={0.2}>
+                  <BulletPoint>
+                    with some constructive criticism, i redesigned the theming
+                    of the entire site.
+                  </BulletPoint>
+                </SlideLeft>
+
+                <SlideLeft delay={0.4}>
+                  <BulletPoint>
+                    i pulled inspiration from tft's prismatic themes - from
+                    there, everything fell into place!
+                  </BulletPoint>
+                </SlideLeft>
+              </div>
+
+              <SlideLeft delay={0.2}>
+                <Panel props="flex-shrink-0">
+                  <Image
+                    src="/tft_logo_evo.png"
+                    height={400}
+                    width={400}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    logo iteration & evolution
+                  </div>
+                </Panel>
+              </SlideLeft>
+
+              <div>
+                <SlideLeft delay={0}>
+                  <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                    <Image
+                      src="/tft_ui_old.png"
+                      height={500}
+                      width={500}
+                      alt="tft-ui"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      old homepage
+                    </div>
+                  </GrowablePanel>
+                </SlideLeft>
+
+                <SlideLeft delay={0.3}>
+                  <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                    <Image
+                      src="/tft_tourney_ui_old.png"
+                      height={500}
+                      width={500}
+                      alt="tft-ui"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      old tournaments page
+                    </div>
+                  </GrowablePanel>
+                </SlideLeft>
+              </div>
+
+              <div>
+                <SlideLeft delay={0.2}>
+                  <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                    <Image
+                      src="/tft_title_new.png"
+                      height={500}
+                      width={500}
+                      alt="tft-ui"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      new homepage
+                    </div>
+                  </GrowablePanel>
+                </SlideLeft>
+
+                <SlideLeft delay={0.4}>
+                  <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                    <Image
+                      src="/tft_tourney_ui_new.png"
+                      height={500}
+                      width={500}
+                      alt="tft-ui"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      new tournaments page
+                    </div>
+                  </GrowablePanel>
+                </SlideLeft>
+              </div>
+
+              <SlideRight delay={0.3}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/tft_ui_planning2.png"
+                    height={500}
+                    width={500}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    figma concept | tournament page
+                  </div>
+                </GrowablePanel>
+              </SlideRight>
+
+              <SlideRight delay={0.5}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/tft_ui_final.png"
+                    height={500}
+                    width={500}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    final design, implemented | tournament page
+                  </div>
+                </GrowablePanel>
+              </SlideRight>
+
+              <SlideRight delay={0.5}>
+                <Panel props="flex-shrink-0">
+                  <Image
+                    src="/tft_mobile.png"
+                    height={500}
+                    width={500}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    mobile view | tournament page
+                  </div>
+                </Panel>
+              </SlideRight>
+
+              <div>
+                <SlideRight delay={0}>
+                  <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                    <Image
+                      src="/tft_user.png"
+                      height={500}
+                      width={500}
+                      alt="tft-ui"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      figma concept | player page
+                    </div>
+                  </GrowablePanel>
+                </SlideRight>
+
+                <SlideRight delay={0.2}>
+                  <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                    <Image
+                      src="/tft_user_final.png"
+                      height={500}
+                      width={500}
+                      alt="tft-ui"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      final design, implemented | player page
+                    </div>
+                  </GrowablePanel>
+                </SlideRight>
+              </div>
             </>
           )}
 

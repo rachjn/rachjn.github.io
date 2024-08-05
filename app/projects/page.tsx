@@ -44,7 +44,7 @@ export default function Projects() {
       </Link>
 
       <Link href="/" className="absolute left-10 top-10">
-        <LuHome className="h-8 w-7 hover:animate-pulse animate-fade" />
+        <LuHome className="h-8 w-7 hover:animate-pulse" />
       </Link>
 
       <div className="my-[7rem] w-full relative overflow-x-clip">

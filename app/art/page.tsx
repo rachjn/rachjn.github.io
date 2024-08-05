@@ -17,8 +17,8 @@ import {
 } from "react-icons/lu";
 import Link from "next/link";
 import { BulletPoint, Panel } from "../components/bulletpoint";
-import { motion } from "framer-motion";
 import { SlideLeft, SlideRight } from "../components/sliding";
+import { LiaItchIo } from "react-icons/lia";
 
 export default function Art() {
   return (
@@ -38,7 +38,7 @@ export default function Art() {
       </Link>
 
       <Link href="/" className="absolute left-10 top-10">
-        <LuHome className="h-8 w-7 hover:animate-pulse animate-fade" />
+        <LuHome className="h-8 w-7 hover:animate-pulse" />
       </Link>
 
       <div className="my-[7rem] w-full relative overflow-x-clip">
@@ -63,6 +63,15 @@ export default function Art() {
               >
                 <LuTwitter />
                 flubstered
+              </Link>
+              <Link
+                href="https://rychie.itch.io/"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="flex items-center gap-2 text-lg"
+              >
+                <LiaItchIo className="h-6 w-6" />
+                rychie
               </Link>
             </div>
           </div>
@@ -214,7 +223,7 @@ export default function Art() {
               <Panel props="flex-shrink-0">
                 <div className="text-sm mb-4 flex gap-2 items-center justify-end">
                   <LuStar />
-                  2024
+                  2023
                 </div>
                 <Image
                   src="/ugg_splash.png"
@@ -234,7 +243,7 @@ export default function Art() {
               <Panel props="flex-shrink-0">
                 <div className="text-sm mb-4 flex gap-2 items-center justify-end">
                   <LuStar />
-                  2024
+                  2023
                 </div>
                 <Image
                   src="/UGG_titlescreen.png"
@@ -245,7 +254,7 @@ export default function Art() {
                 />
                 <div className="text-sm mt-4 flex gap-2 items-center">
                   <LuStar />
-                  title screen | UGG
+                  title screen | ugg
                 </div>
               </Panel>
             </SlideLeft>
@@ -254,13 +263,13 @@ export default function Art() {
               <Panel props="flex-shrink-0">
                 <div className="text-sm mb-4 flex gap-2 items-center justify-end">
                   <LuStar />
-                  2024
+                  2023
                 </div>
                 <Image
                   src="/ugg_first_concept.png"
                   height={380}
                   width={380}
-                  alt="ss-concept"
+                  alt="ugg-concept"
                   className="rounded-lg"
                 />
                 <div className="text-sm mt-4 flex gap-2 items-center">
@@ -274,13 +283,13 @@ export default function Art() {
               <Panel props="flex-shrink-0">
                 <div className="text-sm mb-4 flex gap-2 items-center justify-end">
                   <LuStar />
-                  2024
+                  2023
                 </div>
                 <Image
                   src="/ugg_concept_art.png"
                   height={380}
                   width={380}
-                  alt="ss-splash"
+                  alt="ugg-concept"
                   className="rounded-lg"
                 />
                 <div className="text-sm mt-4 flex gap-2 items-center">
@@ -294,7 +303,7 @@ export default function Art() {
               <Panel props="flex-shrink-0">
                 <div className="text-sm mb-4 flex gap-2 items-center justify-end">
                   <LuStar />
-                  2024
+                  2023
                 </div>
                 <Image
                   src="/ugg_art.png"
@@ -310,6 +319,111 @@ export default function Art() {
               </Panel>
             </SlideRight>
 
+            <div id="sec1">
+              <SlideRight delay={0}>
+                <BulletPoint>
+                  <Link
+                    className="font-bold"
+                    href="https://michaelkho.itch.io/all-card-memories"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    shill issue{" "}
+                  </Link>
+                  was a 2-quarter long game development team working on a
+                  story-heavy deckbuilder game.
+                </BulletPoint>
+              </SlideRight>
+              <SlideRight delay={0.2}>
+                <BulletPoint>
+                  the final pieces are fanart i created for various hoyoverse
+                  games!
+                </BulletPoint>
+              </SlideRight>
+
+              <SlideRight delay={0.4}>
+                <Panel props="flex-shrink-0">
+                  <div className="text-sm mb-4 flex gap-2 items-center justify-end">
+                    <LuStar />
+                    2024
+                  </div>
+                  <Image
+                    src="/shill_char_sheet.png"
+                    height={400}
+                    width={400}
+                    alt="shill-char"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    character sprites | shill
+                  </div>
+                </Panel>
+              </SlideRight>
+            </div>
+
+            <SlideLeft delay={0}>
+              <Panel props="flex-shrink-0">
+                <div className="text-sm mb-4 flex gap-2 items-center justify-end">
+                  <LuStar />
+                  2024
+                </div>
+                <Image
+                  src="/shill_cards.png"
+                  height={240}
+                  width={240}
+                  alt="shill-cards"
+                  className="rounded-lg"
+                />
+                <div className="text-sm mt-4 flex gap-2 items-center">
+                  <LuStar />
+                  character card arts | shill
+                </div>
+              </Panel>
+            </SlideLeft>
+
+            <div>
+              <SlideLeft delay={0.2}>
+                <Panel props="flex-shrink-0">
+                  <div className="text-sm mb-4 flex gap-2 items-center justify-end">
+                    <LuStar />
+                    2024
+                  </div>
+                  <Image
+                    src="/shill_title.png"
+                    height={400}
+                    width={400}
+                    alt="shill-title"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    title screen | shill
+                  </div>
+                </Panel>
+              </SlideLeft>
+
+              <SlideLeft delay={0.4}>
+                <Panel props="flex-shrink-0">
+                  <div className="text-sm mb-4 flex gap-2 items-center justify-end">
+                    <LuStar />
+                    2024
+                  </div>
+                  <Image
+                    src="/shill_stylesheet.png"
+                    height={400}
+                    width={400}
+                    alt="shill-stylesheet"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    card art style sheet | shill
+                  </div>
+                </Panel>
+              </SlideLeft>
+            </div>
+
             <SlideLeft delay={0}>
               <Panel props="flex-shrink-0">
                 <div className="text-sm mb-4 flex gap-2 items-center justify-end">
@@ -320,7 +434,7 @@ export default function Art() {
                   src="/hos.png"
                   height={400}
                   width={400}
-                  alt="ugg-art"
+                  alt="hos"
                   className="rounded-lg"
                 />
                 <div className="text-sm mt-4 flex gap-2 items-center">
@@ -340,7 +454,7 @@ export default function Art() {
                   src="/fuhua.jpeg"
                   height={400}
                   width={400}
-                  alt="ugg-art"
+                  alt="fuhua"
                   className="rounded-lg"
                 />
                 <div className="text-sm mt-4 flex gap-2 items-center">
@@ -359,7 +473,7 @@ export default function Art() {
                   src="/yoi.jpeg"
                   height={400}
                   width={400}
-                  alt="ugg-art"
+                  alt="yoimiya"
                   className="rounded-lg"
                 />
                 <div className="text-sm mt-4 flex gap-2 items-center">
