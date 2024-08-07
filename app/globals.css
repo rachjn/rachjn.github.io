@@ -39,3 +39,18 @@
   color: #2b2724;
   scroll-behavior: smo;
 }
+
+.gradient-text {
+  background: linear-gradient(
+    to right,
+    #4d3944,
+    #3d3425,
+    #223d48,
+    #3d3425,
+    #4d3944,
+    #3d3425,
+    #223d48
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+}

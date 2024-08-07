@@ -7,11 +7,11 @@ export default function Home() {
   return (
     <>
       <div className="overflow-x-clip relative w-full">
-        <div className="mix-blend-overlay absolute -left-[18vh] -top-20 z-20">
+        {/* <div className="mix-blend-overlay absolute -left-[18vh] -top-20 z-10">
           <div className="absolute lg:top-[20vh] left-[10vw] w-[20rem] h-[20rem] bg-extra-blue rounded-full  filter blur-2xl animate-blob opacity-80"></div>
           <div className="absolute lg:top-[20vh] left-[40vw] w-[20rem] h-[20rem] bg-pris-light-pink rounded-full  filter blur-3xl md:blur-2xl animate-blob animation-delay-2000 opacity-90"></div>
           <div className="absolute lg:top-[20rem] left-[24vw] w-[20rem] h-[20rem] bg-pris-yellow rounded-full  filter blur-2xl animate-blob animation-delay-4000 opacity-70 "></div>
-        </div>
+        </div> */}
 
         <div className="absolute -right-[4rem] top-[20vh] lg:right-0 lg:top-0">
           <div className="absolute top-0 right-[60vw] lg:right-[10vw] w-[14rem] h-[14rem] md:w-[25rem] md:h-[25rem] bg-pris-blue rounded-full mix-blend-multiply filter blur-2xl animate-blob opacity-80"></div>
@@ -22,11 +22,13 @@ export default function Home() {
       </div>
 
       <div className="flex flex-wrap items-center mx-[2vw] my-[6rem] justify-center gap-14 animate-fade">
-        <div className="font-bold text-6xl sm:text-8xl">rachel jin</div>
+        <div className="h-[9rem] mt-10 font-bold text-6xl sm:text-8xl z-0 animate-gradient gradient-text text-transparent">
+          rachel jin
+        </div>
         <div className="">
           <div>
             <div className="flex mt-8">
-              <Link href="/about" className="relative">
+              <Link href="/about" className="relative z-100">
                 <FloatingEffect
                   delay={0}
                   height="h-[30vh]"
