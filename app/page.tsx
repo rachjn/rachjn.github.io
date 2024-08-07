@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <div className="overflow-x-clip relative w-full">
-        <div className="mix-blend-overlay absolute -left-[18vh] -top-20">
+        <div className="mix-blend-overlay absolute -left-[18vh] -top-20 z-20">
           <div className="absolute lg:top-[20vh] left-[10vw] w-[20rem] h-[20rem] bg-extra-blue rounded-full  filter blur-2xl animate-blob opacity-80"></div>
           <div className="absolute lg:top-[20vh] left-[40vw] w-[20rem] h-[20rem] bg-pris-light-pink rounded-full  filter blur-3xl md:blur-2xl animate-blob animation-delay-2000 opacity-90"></div>
           <div className="absolute lg:top-[20rem] left-[24vw] w-[20rem] h-[20rem] bg-pris-yellow rounded-full  filter blur-2xl animate-blob animation-delay-4000 opacity-70 "></div>
