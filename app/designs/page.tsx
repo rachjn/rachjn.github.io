@@ -304,6 +304,9 @@ export default function Design() {
           {activeTab.label === "Collegiate Wushu" && (
             <>
               <BulletPoint props="lowercase">Collegiate Wushu</BulletPoint>
+              <BulletPoint props=" lowercase">
+                this section is still a work in progress!
+              </BulletPoint>
             </>
           )}
 

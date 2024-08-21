@@ -62,13 +62,30 @@ export default function Projects() {
         <div className="-mt-6 mx-[12vw] flex gap-6 flex-wrap items-center justify-center">
           {activeTab.label === "TFTourneys" && (
             <>
-              <BulletPoint props=" lowercase">TFTourneys</BulletPoint>
+              <BulletPoint props=" lowercase">
+                {" "}
+                <Link
+                  href="https://tftourneys.com/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="font-bold hover:underline"
+                >
+                  TFTourneys
+                </Link>
+              </BulletPoint>
+              <BulletPoint props=" lowercase">
+                this section is still a work in progress! in the meantime, check
+                out the site!
+              </BulletPoint>
             </>
           )}
 
           {activeTab.label === "Collegiate Wushu" && (
             <>
               <BulletPoint props="lowercase">Collegiate Wushu</BulletPoint>
+              <BulletPoint props=" lowercase">
+                this section is still a work in progress!
+              </BulletPoint>
             </>
           )}
         </div>
