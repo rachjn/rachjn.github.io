@@ -80,9 +80,11 @@ export default function Design() {
               <div>
                 <SlideRight delay={0}>
                   <BulletPoint>
-                    more info about this project can be found under
-                    <Link href="/projects" className="font-bold">
-                      {" "}
+                    more info about this project can be found under{" "}
+                    <Link
+                      href="/projects"
+                      className="font-bold hover:underline"
+                    >
                       projects.
                     </Link>
                   </BulletPoint>
@@ -333,10 +335,227 @@ export default function Design() {
 
           {activeTab.label === "Collegiate Wushu" && (
             <>
-              <BulletPoint props="lowercase">Collegiate Wushu</BulletPoint>
-              <BulletPoint props=" lowercase">
-                this section is still a work in progress!
-              </BulletPoint>
+              <SlideRight delay={0}>
+                <BulletPoint props="lowercase">
+                  more info about this project can be found under{" "}
+                  <Link href="/projects" className="font-bold hover:underline">
+                    projects.
+                  </Link>
+                </BulletPoint>
+              </SlideRight>
+              <SlideRight delay={0.1}>
+                <BulletPoint props=" lowercase">
+                  i was tasked with redesigning the visual interface of the{" "}
+                  <Link
+                    href="http://collegiatewushu.org/home.php"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="font-bold hover:underline"
+                  >
+                    existing site.
+                  </Link>
+                </BulletPoint>
+              </SlideRight>
+              <SlideRight delay={0.2}>
+                <BulletPoint props=" lowercase">
+                  one key task was reorganizing the pages to improve
+                  accessibility to information.
+                </BulletPoint>
+              </SlideRight>
+
+              <SlideRight delay={0}>
+                <GrowablePanel props="flex-shrink-0 max-w-[24.5rem]">
+                  <Image
+                    src="/cwc_home_old.png"
+                    height={500}
+                    width={500}
+                    alt="cwc-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    early home page concept
+                  </div>
+                </GrowablePanel>
+              </SlideRight>
+
+              <div>
+                <SlideLeft delay={0.1}>
+                  <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                    <Image
+                      src="/cwc_old_home2.png"
+                      height={500}
+                      width={500}
+                      alt="cwc-ui"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      early home page concept
+                    </div>
+                  </GrowablePanel>
+                </SlideLeft>
+
+                <SlideLeft delay={0.2}>
+                  <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                    <Image
+                      src="/cwc_home.png"
+                      height={500}
+                      width={500}
+                      alt="cwc-ui"
+                      className="rounded-lg"
+                    />
+                    <div className="text-sm mt-4 flex gap-2 items-center">
+                      <LuStar />
+                      final home page
+                    </div>
+                  </GrowablePanel>
+                </SlideLeft>
+              </div>
+
+              <div>
+                <SlideRight delay={0}>
+                  <BulletPoint props=" lowercase">
+                    one early design choice was switching to a lightmode theme.
+                  </BulletPoint>
+                </SlideRight>
+                <SlideRight delay={0.1}>
+                  <BulletPoint props=" lowercase">
+                    the navy theming made the site look too heavy, and my
+                    lightmode designs were more cohesive. i brought visual
+                    interest by illustrating the blue &quot;swoosh&quot;.
+                  </BulletPoint>
+                </SlideRight>
+              </div>
+
+              <div>
+                <SlideRight delay={0.2}>
+                  <BulletPoint props=" lowercase">
+                    another important decision was deciding between top vs. side
+                    navigation bars for various pages.
+                  </BulletPoint>
+                </SlideRight>
+
+                <SlideRight delay={0.3}>
+                  <BulletPoint props=" lowercase">
+                    after doing some research, i learned that navigation
+                    alignment can be critical to a smooth user experience.
+                  </BulletPoint>
+                </SlideRight>
+              </div>
+
+              <div>
+                <SlideLeft delay={0}>
+                  <BulletPoint props=" lowercase">
+                    top navigation bars are clean for fewer items, while side
+                    navigation takes more space but is ideal for more items.
+                  </BulletPoint>
+                </SlideLeft>
+
+                <SlideLeft delay={0.1}>
+                  <BulletPoint props=" lowercase">
+                    using these general rules, i combined top and side
+                    navigation bars throughout the application to simplify user
+                    flow.
+                  </BulletPoint>
+                </SlideLeft>
+              </div>
+
+              <SlideLeft delay={0}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/cwc_rules_old.png"
+                    height={500}
+                    width={500}
+                    alt="cwc-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    early rules page - top nav
+                  </div>
+                </GrowablePanel>
+              </SlideLeft>
+
+              <SlideLeft delay={0.2}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/cwc_rules.png"
+                    height={500}
+                    width={500}
+                    alt="cwc-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    final rules page - side nav
+                  </div>
+                </GrowablePanel>
+              </SlideLeft>
+
+              <SlideRight delay={0}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/cwc_about.png"
+                    height={500}
+                    width={500}
+                    alt="cwc-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    about page - wip
+                  </div>
+                </GrowablePanel>
+              </SlideRight>
+
+              <SlideRight delay={0.2}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/cwc_registration.png"
+                    height={500}
+                    width={500}
+                    alt="cwc-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    user registration
+                  </div>
+                </GrowablePanel>
+              </SlideRight>
+
+              <SlideLeft delay={0}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/cwc_overview.png"
+                    height={500}
+                    width={500}
+                    alt="cwc-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    user page
+                  </div>
+                </GrowablePanel>
+              </SlideLeft>
+
+              <SlideLeft delay={0.2}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/cwc_events.png"
+                    height={500}
+                    width={500}
+                    alt="cwc-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    event registration
+                  </div>
+                </GrowablePanel>
+              </SlideLeft>
             </>
           )}
 
