@@ -1,18 +1,16 @@
 "use client";
 import {
-  LuGraduationCap,
-  LuLinkedin,
-  LuGithub,
-  LuHeart,
-  LuGamepad2,
   LuChevronRight,
   LuChevronLeft,
   LuSprout,
   LuHome,
   LuStar,
+  LuExternalLink,
 } from "react-icons/lu";
+import { RxDiscordLogo } from "react-icons/rx";
+import { RiTwitterXFill } from "react-icons/ri";
 import Link from "next/link";
-import { BulletPoint, Panel } from "../components/bulletpoint";
+import { BulletPoint, GrowablePanel, Panel } from "../components/bulletpoint";
 import { motion } from "framer-motion";
 import { SlideLeft, SlideRight } from "../components/sliding";
 import Image from "next/image";
@@ -62,21 +60,109 @@ export default function Projects() {
         <div className="-mt-6 mx-[12vw] flex gap-6 flex-wrap items-center justify-center">
           {activeTab.label === "TFTourneys" && (
             <>
-              <BulletPoint props=" lowercase">
-                {" "}
-                <Link
-                  href="https://tftourneys.com/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="font-bold hover:underline"
-                >
-                  TFTourneys
-                </Link>
-              </BulletPoint>
-              <BulletPoint props=" lowercase">
-                this section is still a work in progress! in the meantime, check
-                out the site!
-              </BulletPoint>
+              <SlideRight delay={0}>
+                <Panel>
+                  <div className="flex gap-2 items-center justify-between">
+                    <Link
+                      href="https://tftourneys.com/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className=""
+                    >
+                      <LuExternalLink className="h-7 w-7" />
+                    </Link>
+                    <Link
+                      href="https://discord.gg/gPvXy4Nxt4"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className=""
+                    >
+                      <RxDiscordLogo className="h-8 w-8" />
+                    </Link>
+                    <Link
+                      href="https://x.com/tftourneys_"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      className=""
+                    >
+                      <RiTwitterXFill className="h-7 w-7" />
+                    </Link>
+                  </div>
+                </Panel>
+                <BulletPoint props=" lowercase">
+                  {" "}
+                  <Link
+                    href="https://tftourneys.com/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="font-bold hover:underline"
+                  >
+                    TFTourneys{" "}
+                  </Link>
+                  provides tournament data, player statistics, and live updates
+                  for competitive teamfight tactics.
+                  <div className="mt-2">
+                    it started as a simple passion project born out of my team
+                    and i's love for games, but it has become so much more!
+                  </div>
+                </BulletPoint>
+              </SlideRight>
+
+              <div>
+                <SlideLeft delay={0.1}>
+                  <BulletPoint props="lowercase">
+                    made with: Next.js, tailwind css, PostgreSQL, Flask, nginx,
+                    and Cloudflare
+                  </BulletPoint>
+                </SlideLeft>
+                <SlideLeft delay={0.2}>
+                  <BulletPoint props="lowercase">
+                    on launch weekend, the site reached over a thousand users,
+                    even gaining feedback from legendary figures in the
+                    community like frodan and dishsoap!
+                  </BulletPoint>
+                </SlideLeft>
+              </div>
+
+              <div>
+                <SlideLeft delay={0.3}>
+                  <BulletPoint props="lowercase">
+                    my team was motivated to improve the disorganization within
+                    tft esports & alleviate the frustrations we noticed from pro
+                    players and fans alike.
+                  </BulletPoint>
+                </SlideLeft>
+                <SlideLeft delay={0.4}>
+                  <BulletPoint props="lowercase">
+                    we plan to continue adding new features over time, and we
+                    are so grateful to be able to enhance the viewer experience.
+                  </BulletPoint>
+                </SlideLeft>
+              </div>
+
+              <SlideLeft delay={0}>
+                <GrowablePanel props="flex-shrink-0 max-w-[40rem]">
+                  <Image
+                    src="/tfthomegif.gif"
+                    height={220}
+                    width={220}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                </GrowablePanel>
+              </SlideLeft>
+
+              <SlideLeft delay={0.2}>
+                <GrowablePanel props="flex-shrink-0 max-w-[45rem]">
+                  <Image
+                    src="/tft_about_info.png"
+                    height={800}
+                    width={800}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                </GrowablePanel>
+              </SlideLeft>
             </>
           )}
 

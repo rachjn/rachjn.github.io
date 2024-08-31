@@ -107,14 +107,30 @@ export default function Design() {
                 </SlideRight>
               </div>
 
+              <SlideLeft delay={0.2}>
+                <Panel props="flex-shrink-0">
+                  <Image
+                    src="/tft_logo_evo.png"
+                    height={400}
+                    width={400}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    logo iteration & evolution
+                  </div>
+                </Panel>
+              </SlideLeft>
+
               <div>
                 <SlideLeft delay={0}>
                   <BulletPoint>
                     however, discussing with the team & gathering feedback, we
                     pinpointed a need for change.
                     <br></br>
-                    it was clear we needed more visual interest, and pure b&w
-                    strains the eye.
+                    it was clear we needed to bring more life to the site, and
+                    pure b&w strains the eye.
                   </BulletPoint>
                 </SlideLeft>
 
@@ -132,22 +148,6 @@ export default function Design() {
                   </BulletPoint>
                 </SlideLeft>
               </div>
-
-              <SlideLeft delay={0.2}>
-                <Panel props="flex-shrink-0">
-                  <Image
-                    src="/tft_logo_evo.png"
-                    height={400}
-                    width={400}
-                    alt="tft-ui"
-                    className="rounded-lg"
-                  />
-                  <div className="text-sm mt-4 flex gap-2 items-center">
-                    <LuStar />
-                    logo iteration & evolution
-                  </div>
-                </Panel>
-              </SlideLeft>
 
               <div>
                 <SlideLeft delay={0}>
@@ -203,7 +203,7 @@ export default function Design() {
                 <SlideLeft delay={0.4}>
                   <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
                     <Image
-                      src="/tft_tourney_ui_new.png"
+                      src="/tft_FINAL_tourneypage.png"
                       height={500}
                       width={500}
                       alt="tft-ui"
@@ -236,7 +236,7 @@ export default function Design() {
               <SlideRight delay={0.5}>
                 <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
                   <Image
-                    src="/tft_ui_final.png"
+                    src="/tft_FINAL_individ_tourneypage.png"
                     height={500}
                     width={500}
                     alt="tft-ui"
@@ -249,7 +249,39 @@ export default function Design() {
                 </GrowablePanel>
               </SlideRight>
 
-              <SlideRight delay={0.5}>
+              <SlideLeft delay={0}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/tft_playermodal_idea.png"
+                    height={500}
+                    width={500}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    initial idea | player modal | drawn by jeffrey tan
+                  </div>
+                </GrowablePanel>
+              </SlideLeft>
+
+              <SlideLeft delay={0.2}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/tft_playermodal_implemented.png"
+                    height={500}
+                    width={500}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    final design, implemented | player modal
+                  </div>
+                </GrowablePanel>
+              </SlideLeft>
+
+              <SlideRight delay={0}>
                 <Panel props="flex-shrink-0">
                   <Image
                     src="/tft_mobile.png"
@@ -265,39 +297,37 @@ export default function Design() {
                 </Panel>
               </SlideRight>
 
-              <div>
-                <SlideRight delay={0}>
-                  <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
-                    <Image
-                      src="/tft_user.png"
-                      height={500}
-                      width={500}
-                      alt="tft-ui"
-                      className="rounded-lg"
-                    />
-                    <div className="text-sm mt-4 flex gap-2 items-center">
-                      <LuStar />
-                      figma concept | player page
-                    </div>
-                  </GrowablePanel>
-                </SlideRight>
+              <SlideRight delay={0.2}>
+                <Panel props="flex-shrink-0">
+                  <Image
+                    src="/tft_home_mobile.png"
+                    height={500}
+                    width={500}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    mobile view | homepage section
+                  </div>
+                </Panel>
+              </SlideRight>
 
-                <SlideRight delay={0.2}>
-                  <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
-                    <Image
-                      src="/tft_user_final.png"
-                      height={500}
-                      width={500}
-                      alt="tft-ui"
-                      className="rounded-lg"
-                    />
-                    <div className="text-sm mt-4 flex gap-2 items-center">
-                      <LuStar />
-                      final design, implemented | player page
-                    </div>
-                  </GrowablePanel>
-                </SlideRight>
-              </div>
+              <SlideRight delay={0.4}>
+                <Panel props="flex-shrink-0">
+                  <Image
+                    src="/tft_about_mobile.png"
+                    height={500}
+                    width={500}
+                    alt="tft-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    mobile view | about page
+                  </div>
+                </Panel>
+              </SlideRight>
             </>
           )}
 

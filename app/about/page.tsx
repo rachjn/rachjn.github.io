@@ -70,8 +70,8 @@ export default function About() {
                 viewport={{ once: false }} // Animation occurs once when the element comes into view
               >
                 <BulletPoint props="lowercase -mt-6">
-                  I&apos;m a recent computer science enthusiast with specific
-                  interest in frontend development and UI/UX design.
+                  I&apos;m a programmer with specific interests in full-stack
+                  development, game development, and UI/UX design.
                 </BulletPoint>
               </motion.div>
               <motion.div
@@ -93,8 +93,8 @@ export default function About() {
               >
                 <BulletPoint props="lowercase ">
                   I love making things and making things look good. I find
-                  myself working on developing games and web applications.
-                  I&apos;m always looking to learn!
+                  myself developing games and web applications. i'm always busy
+                  building the next thing!
                 </BulletPoint>
               </motion.div>
             </div>
@@ -187,16 +187,15 @@ export default function About() {
                       <div className="flex items-center gap-2 mt-2">
                         <LuHeart />
                         <div>
-                          my
+                          my{" "}
                           <Link
                             href="https://www.instagram.com/acmstudio.ucla/"
                             rel="noopener noreferrer"
                             target="_blank"
-                            className="font-bold"
+                            className="font-bold hover:underline"
                           >
-                            {" "}
-                            acm studio{" "}
-                          </Link>
+                            acm studio
+                          </Link>{" "}
                           fam!
                         </div>
                       </div>
@@ -213,9 +212,9 @@ export default function About() {
                 viewport={{ once: false }} // Animation occurs once when the element comes into view
               >
                 <BulletPoint props="-mt-6">
-                  while frontend is my forte, i&apos;m always progressing
-                  towards full-stack - every stage of development offers a new
-                  problem to solve!
+                  while frontend is my forte, i push to develop over the full
+                  stack - every stage of development offers a new problem to
+                  solve!
                 </BulletPoint>
               </motion.div>
               <motion.div
