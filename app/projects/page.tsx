@@ -103,7 +103,7 @@ export default function Projects() {
                   for competitive teamfight tactics.
                   <div className="mt-2">
                     it started as a simple passion project born out of my team
-                    and i's love for games, but it has become so much more!
+                    and i&apos;s love for games, but it has become so much more!
                   </div>
                 </BulletPoint>
               </SlideRight>

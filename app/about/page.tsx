@@ -93,8 +93,8 @@ export default function About() {
               >
                 <BulletPoint props="lowercase ">
                   I love making things and making things look good. I find
-                  myself developing games and web applications. i'm always busy
-                  building the next thing!
+                  myself developing games and web applications. i&apos;m always
+                  busy building the next thing!
                 </BulletPoint>
               </motion.div>
             </div>
