@@ -212,9 +212,16 @@ export default function About() {
                 viewport={{ once: false }} // Animation occurs once when the element comes into view
               >
                 <BulletPoint props="-mt-6">
-                  while frontend is my forte, i push to develop over the full
-                  stack - every stage of development offers a new problem to
-                  solve!
+                  in summer 2025, i interned at meta on the learning &
+                  onboarding team!
+                  <ul className="list-inside">
+                    <li>
+                      <div className="flex items-start gap-2 mt-2">
+                        <LuSprout className="flex-shrink-0 mt-1" />i worked on
+                        the internship tool - a super "meta" project!
+                      </div>
+                    </li>
+                  </ul>
                 </BulletPoint>
               </motion.div>
               <motion.div
@@ -248,21 +255,9 @@ export default function About() {
                 viewport={{ once: false }} // Animation occurs once when the element comes into view
               >
                 <BulletPoint>
-                  some fun facts in general
-                  <ul className="list-inside">
-                    <li>
-                      <div className="flex items-start gap-2 mt-2">
-                        <LuSprout className="flex-shrink-0 mt-1" />
-                        git became self-hosting in a day
-                      </div>
-                    </li>
-                    <li>
-                      <div className="flex items-start gap-2 mt-2">
-                        <LuSprout className="flex-shrink-0 mt-1" />
-                        php is a recursive acronym
-                      </div>
-                    </li>
-                  </ul>
+                  while frontend is my forte, i push to develop over the full
+                  stack - every stage of development offers a new problem to
+                  solve!
                 </BulletPoint>
               </motion.div>
             </div>
