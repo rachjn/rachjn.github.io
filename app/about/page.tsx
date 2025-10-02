@@ -218,7 +218,7 @@ export default function About() {
                     <li>
                       <div className="flex items-start gap-2 mt-2">
                         <LuSprout className="flex-shrink-0 mt-1" />i worked on
-                        the internship tool - a super "meta" project!
+                        the internship tool - a super &quot;meta&quot; project!
                       </div>
                     </li>
                   </ul>
