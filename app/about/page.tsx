@@ -213,12 +213,12 @@ export default function About() {
               >
                 <BulletPoint props="-mt-6">
                   in summer 2025, i interned at meta on the learning &
-                  onboarding team!
+                  onboarding team
                   <ul className="list-inside">
                     <li>
                       <div className="flex items-start gap-2 mt-2">
-                        <LuSprout className="flex-shrink-0 mt-1" />i worked on
-                        the internship tool - a super &quot;meta&quot; project!
+                        <LuSprout className="flex-shrink-0 mt-1" />
+                        i&apos;ll be starting full-time in may 2026!
                       </div>
                     </li>
                   </ul>
