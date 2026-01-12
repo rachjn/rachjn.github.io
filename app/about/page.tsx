@@ -241,8 +241,7 @@ export default function About() {
                     </li>
                     <li>
                       <div className="flex items-center gap-2 mt-2">
-                        <LuSprout />
-                        i&apos;m a licensed phlebotomist
+                        <LuSprout />i was a licensed phlebotomist
                       </div>
                     </li>
                   </ul>
