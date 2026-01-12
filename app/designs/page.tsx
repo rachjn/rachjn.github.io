@@ -556,6 +556,54 @@ export default function Design() {
                   </div>
                 </GrowablePanel>
               </SlideLeft>
+
+              <SlideRight delay={0}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/cwc_2_hero.gif"
+                    height={500}
+                    width={500}
+                    alt="cwc-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    homepage exploration
+                  </div>
+                </GrowablePanel>
+              </SlideRight>
+
+              <SlideRight delay={0.2}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/cwc_2_hero_2.gif"
+                    height={500}
+                    width={500}
+                    alt="cwc-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    homepage exploration
+                  </div>
+                </GrowablePanel>
+              </SlideRight>
+
+              <SlideRight delay={0}>
+                <GrowablePanel props="flex-shrink-0 max-w-[32rem]">
+                  <Image
+                    src="/cwc_2_hero_3.gif"
+                    height={500}
+                    width={500}
+                    alt="cwc-ui"
+                    className="rounded-lg"
+                  />
+                  <div className="text-sm mt-4 flex gap-2 items-center">
+                    <LuStar />
+                    homepage exploration
+                  </div>
+                </GrowablePanel>
+              </SlideRight>
             </>
           )}
 
